@@ -10,7 +10,7 @@ class Display:
     def addCanvas(self, canvas):
         self.canvas += [canvas]
 
-    def display(self):
+    def refresh(self):
         for canvas in self.canvas:
             canvas.blitAll()
             self.root.blit(canvas.surface, (canvas.x, canvas.y) )
